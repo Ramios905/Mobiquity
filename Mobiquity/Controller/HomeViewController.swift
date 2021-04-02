@@ -66,6 +66,7 @@ extension HomeViewController : UICollectionViewDataSource,UICollectionViewDelega
                                                          for: indexPath) as? LocCollectionViewCell {
             cell.locModel = locModelObjects[indexPath.item]
             cell.favSwt.addTarget(self, action: #selector(selectFavBtn(_:)), for: .touchUpInside)
+            cell.favSwt.tag = indexPath.row
     
             return cell
         }
