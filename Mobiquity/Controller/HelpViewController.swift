@@ -13,6 +13,7 @@ class HelpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = StrConstant.helpTitle
         let url = Bundle.main.url(forResource: "Help", withExtension:"html")
         let request = NSURLRequest(url: url!)
         DispatchQueue.main.async {
